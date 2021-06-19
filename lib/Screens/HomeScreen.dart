@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage>{
 
 
   Future<String> getJsonFromFirebaseRestAPI() async {
-    String url = "https://fingerprint-45580.firebaseio.com/ESP32_Device.json?";
+    String url = "API address";
     http.Response response = await http.get(Uri.parse(url));
     return response.body;
   }
